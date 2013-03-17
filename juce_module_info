@@ -1,0 +1,23 @@
+{
+  "id":             "hiredis",
+  "name":           "Minimalistic C client for Redis >= 1.2",
+  "version":        "1.0.0",
+  "description":    "Hiredis is a minimalistic C client library for the Redis database.",
+  "website":        "http://redis.io",
+  "license":        "BSD",
+
+  "dependencies":   [],
+
+  "include":        "hiredis.h",
+
+  "compile":        [ { "file": "hiredis.c", "target": "! xcode" },
+                      { "file": "hiredis.c",  "target": "xcode" } ],
+
+  "browse":         ["src/dict.h", "src/dict.c",
+  					 "src/fmacros.h",
+  					 "src/hiredis.h", "src/hiredis.c",
+  					 "src/net.h", "src/net.c",
+  					 "src/sds.h", "src/sds.c"],
+
+  "iOSFrameworks":  ""
+}
